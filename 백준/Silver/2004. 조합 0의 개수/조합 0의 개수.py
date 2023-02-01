@@ -1,6 +1,4 @@
-from math import factorial as f
 import sys
-
 input = sys.stdin.readline
 
 n, m = map(int, input().split())
@@ -16,3 +14,4 @@ cnt_5 = cnt_num(n, 5) - cnt_num(m, 5) - cnt_num(n - m, 5)
 cnt_2 = cnt_num(n, 2) - cnt_num(m, 2) - cnt_num(n - m, 2)
 
 print(min(cnt_5, cnt_2))
+
