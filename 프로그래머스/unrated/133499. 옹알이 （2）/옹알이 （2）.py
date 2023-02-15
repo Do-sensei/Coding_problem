@@ -1,5 +1,3 @@
-from itertools import permutations
-
 def solution(babbling):
     answer = 0
     babb_dict = {"aya":1, "ye":2, "woo":3, "ma":4}
