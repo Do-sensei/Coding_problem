@@ -8,4 +8,4 @@ for _ in range(m):
     i, j = map(int, input().split())
     n_ls[i-1], n_ls[j-1] = n_ls[j-1], n_ls[i-1]
 
-print(*n_ls)
+print(' '.join(map(str, n_ls)))
