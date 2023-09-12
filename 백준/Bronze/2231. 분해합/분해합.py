@@ -3,10 +3,13 @@ input = sys.stdin.readline
 
 n = int(input())
 
-for i in range(1, n+1):
+start = n - 9 * len(str(n))
+if start < 1:
+    start = 1
+
+for i in range(start, n):
     if i + sum(map(int, str(i))) == n:
         print(i)
         break
-    else:
-        if i == n:
-            print(0)
+else: 
+    print(0)
